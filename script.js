@@ -204,33 +204,29 @@
         }, { passive: true });
     });
 
-    document.addEventListener("DOMContentLoaded", function() {
-        function expandContent(button) {
-            const carouselItem = button.closest('.carousel-item');
-            const extraContent = carouselItem.querySelector('.extra-content');
-            const carousel = document.querySelector('.use-cases .carousel');
+ function expandContent(button) {
+        const carouselItem = button.closest('.carousel-item');
+        const extraContent = carouselItem.querySelector('.extra-content');
+        const carousel = document.querySelector('.use-cases .carousel');
 
-            if (carouselItem.classList.contains('expanded')) {
-                carouselItem.classList.remove('expanded');
-                extraContent.style.display = 'none';
-                button.textContent = "Rozwiń";
-            } else {
-                const allCarouselItems = carousel.querySelectorAll('.carousel-item');
-                allCarouselItems.forEach(item => {
-                    item.classList.remove('expanded');
-                    const itemExtraContent = item.querySelector('.extra-content');
-                    itemExtraContent.style.display = 'none';
-                    item.querySelector('button').textContent = "Rozwiń";
-                });
+        if (carouselItem.classList.contains('expanded')) {
+            carouselItem.classList.remove('expanded');
+            extraContent.style.display = 'none';
+            button.textContent = "Rozwiń";
+        } else {
+            const allCarouselItems = carousel.querySelectorAll('.carousel-item');
+            allCarouselItems.forEach(item => {
+                item.classList.remove('expanded');
+                const itemExtraContent = item.querySelector('.extra-content');
+                if (itemExtraContent) itemExtraContent.style.display = 'none';
+                item.querySelector('button').textContent = "Rozwiń";
+            });
 
-                carouselItem.classList.add('expanded');
-                extraContent.style.display = 'block';
-                button.textContent = "Zwiń";
-            }
+            carouselItem.classList.add('expanded');
+            extraContent.style.display = 'block';
+            button.textContent = "Zwiń";
         }
-
-        window.expandContent = expandContent;
-    });
+    }
 document.addEventListener("DOMContentLoaded", () => {
     const galleryItems = document.querySelectorAll(".gallery-item img");
     const lightbox = document.getElementById("lightbox");
