@@ -113,17 +113,17 @@
         }
 
         @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-50px); }
+            from { opacity: 1; transform: translateY(-50px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(50px); }
+            from { opacity: 1; transform: translateY(50px); }
             to { opacity: 1; transform: translateY(0); }
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; }
+            from { opacity: 1; }
             to { opacity: 1; }
         }
 
@@ -134,7 +134,7 @@
     margin: 20px 0 !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
     border-radius: 10px !important;
-    opacity: 0; /* Ukrywamy początkowo */
+    opacity: 1; /* Ukrywamy początkowo */
     transform: translateY(50px); /* Przesuwamy poniżej widocznego obszaru */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Dodajemy płynne przejścia */
 }
@@ -1004,7 +1004,7 @@ img.unique-img {
 	 /* Animacje pojawiania się */
         @keyframes fadeInUp {
             from {
-                opacity: 0;
+                opacity: 1;
                 transform: translateY(20px);
             }
             to {
@@ -1014,7 +1014,7 @@ img.unique-img {
         }
 
         .fade-in-up {
-            opacity: 0;
+            opacity: 1;
             animation: fadeInUp 1s ease-out forwards;
         }
 @media (max-width: 768px) {
