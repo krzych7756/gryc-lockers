@@ -112,21 +112,6 @@
             transform: scale(1.05) !important;
         }
 
-        @keyframes fadeInDown {
-            from { opacity: 1; transform: translateY(-50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeInUp {
-            from { opacity: 1; transform: translateY(50px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 1; }
-            to { opacity: 1; }
-        }
-
         .section, .values, .cta, .contact-form, .use-cases, .testimonials, .creator, .product-images, .stats, footer {
     padding: 40px 20px !important;
     text-align: center !important;
@@ -134,8 +119,6 @@
     margin: 20px 0 !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
     border-radius: 10px !important;
-    transform: translateY(50px); /* Przesuwamy poniżej widocznego obszaru */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Dodajemy płynne przejścia */
 }
 
 .contact-form h2 {
