@@ -134,14 +134,8 @@
     margin: 20px 0 !important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
     border-radius: 10px !important;
-    opacity: 1; /* Ukrywamy początkowo */
     transform: translateY(50px); /* Przesuwamy poniżej widocznego obszaru */
     transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Dodajemy płynne przejścia */
-}
-
-.section.show, .values.show, .cta.show, .contact-form.show, .use-cases.show, .testimonials.show, .creator.show, .product-images.show, .stats.show, footer.show {
-    opacity: 1; /* Pokazujemy */
-    transform: translateY(0); /* Przesuwamy do pierwotnej pozycji */
 }
 
 .contact-form h2 {
