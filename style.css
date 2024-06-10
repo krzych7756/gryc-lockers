@@ -290,112 +290,108 @@
     100% { transform: translateY(0); }
 }
 
-.use-cases .carousel-item {
-    scroll-snap-align: start !important;
-    flex: none !important;
-    width: 350px !important;
-    margin-right: 20px !important;
-    background: #ffffff !important; /* White background for better readability */
-    padding: 20px !important;
-    border-radius: 10px !important; /* More rounded corners */
-    transition: background-color 0.5s, transform 0.3s, box-shadow 0.3s !important; /* Added box-shadow transition */
-    box-shadow: 0 4px 12px rgba(40, 1, 125, 0.2) !important; /* blue shadow */
-    color: #1d3557 !important; /* Darker text color for contrast */
-    position: relative !important;
-    text-align: left !important;
-    margin-bottom: 60px !important;
-    overflow: hidden !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: space-between !important;
-    animation: float 3s infinite ease-in-out; /* Apply floating animation */
-    animation-play-state: running; /* Ensure animation is running */
-}
+       .use-cases .carousel-item {
+            scroll-snap-align: start !important;
+            flex: none !important;
+            width: 350px !important;
+            margin-right: 20px !important;
+            background: #ffffff !important; /* White background for better readability */
+            padding: 20px !important;
+            border-radius: 10px !important; /* More rounded corners */
+            transition: background-color 0.5s, transform 0.3s, box-shadow 0.3s !important; /* Added box-shadow transition */
+            box-shadow: 0 4px 12px rgba(40, 1, 125, 0.2) !important; /* blue shadow */
+            color: #1d3557 !important; /* Darker text color for contrast */
+            position: relative !important;
+            text-align: left !important;
+            margin-bottom: 60px !important;
+            overflow: hidden !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: space-between !important;
+            animation: float 3s infinite ease-in-out; /* Apply floating animation */
+            animation-play-state: running; /* Ensure animation is running */
+        }
 
-.use-cases .carousel:hover .carousel-item {
-    animation-play-state: paused !important; /* Pause animation on hover */
-}
+        .use-cases .carousel:hover .carousel-item {
+            animation-play-state: paused !important; /* Pause animation on hover */
+        }
 
-.use-cases .carousel-item:nth-child(odd) {
-    animation-delay: 0.5s; /* Delay for odd items */
-}
+        .use-cases .carousel-item:nth-child(odd) {
+            animation-delay: 0.5s; /* Delay for odd items */
+        }
 
-.use-cases .carousel-item:nth-child(even) {
-    animation-delay: 1s; /* Delay for even items */
-}
+        .use-cases .carousel-item:nth-child(even) {
+            animation-delay: 1s; /* Delay for even items */
+        }
 
-.use-cases h2 {
-    margin-bottom: 30px !important; 
-    margin-top: 30px !important;
-    text-align: center !important; /* Center title text */
-    color: #1d3557 !important; /* Darker title color */
-}
+        .use-cases h2 {
+            margin-bottom: 30px !important; 
+            margin-top: 30px !important;
+            text-align: center !important; /* Center title text */
+            color: #1d3557 !important; /* Darker title color */
+        }
 
-.use-cases h3 {
-    font-size: 1.4em !important; /* Increased font size */
-    text-align: center !important; /* Centered text */
-    animation: fadeInDown 1s ease-out !important;
-    color: #1d3557 !important; /* Darker subtitle color */
-}
+        .use-cases h3 {
+            font-size: 1.4em !important; /* Increased font size */
+            text-align: center !important; /* Centered text */
+            animation: fadeInDown 1s ease-out !important;
+            color: #1d3557 !important; /* Darker subtitle color */
+        }
 
-.use-cases .carousel-item:hover {
-    background-color: #e63946 !important; 
-    color: #fff !important; /* Change text color on hover */
-    transform: scale(1.05) !important; /* Slightly increase size on hover */
-    box-shadow: 0 6px 16px rgba(230, 57, 70, 0.5) !important; /* Darker red shadow on hover */
-}
+        .use-cases .carousel-item:hover {
+            background-color: #e63946 !important; 
+            color: #fff !important; /* Change text color on hover */
+            transform: scale(1.05) !important; /* Slightly increase size on hover */
+            box-shadow: 0 6px 16px rgba(230, 57, 70, 0.5) !important; /* Darker red shadow on hover */
+        }
 
-.use-cases .carousel-item img {
-    width: 100% !important;
-    height: auto !important;
-    border-radius: 10px !important; /* More rounded corners for images */
-}
+        .use-cases .carousel-item img {
+            width: 100% !important;
+            height: auto !important;
+            border-radius: 10px !important; /* More rounded corners for images */
+        }
 
-.use-cases .carousel-item h3 {
-    font-size: 1.4em !important;
-    color: #1d3557 !important; /* Darker subtitle color */
-    text-align: center !important;
-    margin: 10px 0 !important; /* Adjusted margin */
-}
+        .use-cases .carousel-item h3 {
+            font-size: 1.4em !important;
+            color: #1d3557 !important; /* Darker subtitle color */
+            text-align: center !important;
+            margin: 10px 0 !important; /* Adjusted margin */
+        }
 
-.use-cases .carousel-item p {
-    text-align: center !important; /* Center text */
-    margin: 10px 0 !important; /* Adjusted margin */
-    color: #1d3557 !important; /* Darker text color */
-}
+        .use-cases .carousel-item p {
+            text-align: center !important; /* Center text */
+            margin: 10px 0 !important; /* Adjusted margin */
+            color: #1d3557 !important; /* Darker text color */
+        }
 
-.use-cases .carousel-item button {
-    background: #1d3557 !important; /* Dark background for buttons */
-    color: #fff !important; /* White text color */
-    padding: 10px 20px !important; /* Adjusted padding */
-    border: none !important;
-    border-radius: 25px !important; /* More rounded corners */
-    cursor: pointer !important;
-    transition: background 0.3s, transform 0.3s !important;
-    margin-top: 10px !important; /* Adjusted margin */
-    align-self: center !important; /* Center button horizontally */
-}
+        .use-cases .carousel-item button {
+            background: #1d3557 !important; /* Dark background for buttons */
+            color: #fff !important; /* White text color */
+            padding: 10px 20px !important; /* Adjusted padding */
+            border: none !important;
+            border-radius: 25px !important; /* More rounded corners */
+            cursor: pointer !important;
+            transition: background 0.3s, transform 0.3s !important;
+            margin-top: 10px !important; /* Adjusted margin */
+            align-self: center !important; /* Center button horizontally */
+        }
 
-.use-cases .carousel-item button:hover {
-    background: #457b9d !important; /* Change button color on hover */
-    transform: scale(1.1) !important;
-}
+        .use-cases .carousel-item button:hover {
+            background: #457b9d !important; /* Change button color on hover */
+            transform: scale(1.1) !important;
+        }
 
-.use-cases .extra-content {
-    display: none !important; 
-}
+        .use-cases .extra-content {
+            display: none !important; 
+        }
 
-.use-cases .carousel-item.expanded .extra-content {
-    display: block !important; 
-}
+        .use-cases .carousel-item.expanded .extra-content {
+            display: block !important; 
+        }
 
-.use-cases .carousel-item.expanded {
-    height: auto !important; 
-}
-
-
-
-      
+        .use-cases .carousel-item.expanded {
+            height: auto !important; 
+        }  
 
 .opinion-section {
     display: flex;
