@@ -632,13 +632,13 @@ img.unique-img {
   display: block;
   transition-duration: .3s;
 }
-#testimonials {
+.testimonials {
     background-color: #f9f9f9;
     padding: 50px 20px;
     text-align: center;
 }
 
-#testimonials h2 {
+.testimonials h2 {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 30px;
